@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git@github.com:sooraj-e/imageuploader.git"
   },
   "scripts": {
     "start": "node app.js"
