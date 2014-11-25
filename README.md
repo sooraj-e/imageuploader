@@ -18,8 +18,21 @@ Simple Image upload and conversion in Node.js
   * gallery : 380 x 380
 
 * Save to server or S3
+
+##Dependencies
+Requires imagemagick CLI tools to be installed. 
+OS X
+
+`brew install imagemagick`
+
+Linux
+
+`sudo apt-get install libmagick++-dev`
+or
+`sudo yum install ImageMagick-c++ ImageMagick-c++-devel`
+
 ##How to run.
 * Install node modules `sudo npm install`
 * Rename config/secrets.sample.js to config/secrets.js 
 * For S3 upload set your S3 api key, secret and bucket name in secrets.js
-# run npm start
+* Run node app.js
