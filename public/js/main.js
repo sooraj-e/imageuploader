@@ -1,6 +1,6 @@
 $(document).ready(function() {
     status('Choose an Image.');
-
+    //check image resolution
     $('#photo').change(function() {
         var readFile = new FileReader;
 
@@ -58,10 +58,7 @@ $(document).ready(function() {
                     $("#images").append('<li><a  target="_blank" href="' + response.images.hsmall + '"><span class="tab">Horizontal Small</span></a></li>');
 
             }
-        });
-
-        // Have to stop the form from submitting and causing                                                                                                       
-        // a page refresh - don't forget this                                                                                                                      
+        });                                                                                                                   
         return false;
     });
 

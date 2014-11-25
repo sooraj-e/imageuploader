@@ -73,10 +73,10 @@ exports.upload = function(req, res) {
             console.log(images);
             //fix old s3 url
             if (req.body.type) {
-                images.hsmall = images.hsmall.replace('https://s3.amazonaws.com/instalively/', 'https://instalively.s3.amazonaws.com/');
-                images.gallery = images.gallery.replace('https://s3.amazonaws.com/instalively/', 'https://instalively.s3.amazonaws.com/');
-                images.vertical = images.vertical.replace('https://s3.amazonaws.com/instalively/', 'https://instalively.s3.amazonaws.com/');
-                images.horizontal = images.horizontal.replace('https://s3.amazonaws.com/instalively/', 'https://instalively.s3.amazonaws.com/');
+                images.hsmall = images.hsmall.replace('https://s3.amazonaws.com/' + secrets.s3.BUCKET + '/', 'https://' + secrets.s3.BUCKET + '.s3.amazonaws.com/');
+                images.gallery = images.gallery.replace('https://s3.amazonaws.com/' + secrets.s3.BUCKET + '/', 'https://' + secrets.s3.BUCKET + '.s3.amazonaws.com/');
+                images.vertical = images.vertical.replace('https://s3.amazonaws.com/' + secrets.s3.BUCKET + '/', 'https://' + secrets.s3.BUCKET + '.s3.amazonaws.com/');
+                images.horizontal = images.horizontal.replace('https://s3.amazonaws.com/' + secrets.s3.BUCKET + '/', 'https://' + secrets.s3.BUCKET + '.s3.amazonaws.com/');
 
             }
             res.status(200).json({

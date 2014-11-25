@@ -18,5 +18,8 @@ Simple Image upload and conversion in Node.js
   * gallery : 380 x 380
 
 * Save to server or S3
-
-Install node modules and start the project
+##How to run.
+* Install node modules `sudo npm install`
+* Rename config/secrets.sample.js to config/secrets.js 
+* For S3 upload set your S3 api key, secret and bucket name in secrets.js
+# run npm start
