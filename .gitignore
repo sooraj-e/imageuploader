@@ -26,3 +26,19 @@ node_modules
 
 # Users Environment Variables
 .lock-wscript
+
+#image uploads
+uploads/
+
+
+pids
+logs
+results
+tmp
+.DS_Store
+Thumbs.db
+
+config/secrets.js
+uploads/
+
+builtAssets/
