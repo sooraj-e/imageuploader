@@ -1,0 +1,9 @@
+extends layout
+
+block content
+	div
+		h3.text-center
+			i.fa.fa-frown-o
+			| Error
+		if message
+			h3.text-center #{message}

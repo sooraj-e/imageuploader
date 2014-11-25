@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  .page-header
+    h3 Upload Image
+
+  form.form-horizontal(id="uploadForm",enctype="multipart/form-data" role='form', method='POST',action="/upload")
+    .form-group
+      label(class='col-sm-2 control-label', for='type') Upload to S3
+      .col-sm-6
+        input(type='checkbox', name='type', checked=false)
+    .form-group
+      label(class='col-sm-2 control-label', for='name') Select Image
+      .col-sm-6
+        input.form-control(type='file', name='photo', id='photo', autofocus=true,required)
+      label(class='control-label', for='name') *Minimum Resolution 1024x1024
+    .form-group
+      label(class='col-sm-2 control-label', for='email') Status
+      .col-sm-6
+        label.form-control( name='status', id='status')
+    .form-group
+      label(class='col-sm-2 control-label', for='name')
+      .col-sm-6
+        ul#images
+  
